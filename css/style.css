@@ -30,6 +30,16 @@ input {
     }
 }
 
+input[type="time"]::-webkit-date-and-time-value {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+input[type='time'] {
+    -webkit-appearance: none;
+}
+
 @media print {
 
     .title {
