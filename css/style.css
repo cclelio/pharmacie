@@ -1,0 +1,47 @@
+input {
+    border: 0;
+}
+
+.title {
+    display: flex;
+
+    div {
+        flex: 1;
+        text-align: center;
+        border: 1px solid gray;
+        font-size: 80px;
+    }
+}
+
+.morning,
+.afternoon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        width: 48;
+        height: 48;
+    }
+
+    input {
+        font-size: 50px;
+    }
+}
+
+@media print {
+
+    .title {
+        div {
+            border: 0 !important;
+        }
+    }
+
+    .morning,
+    .afternoon {
+        input[type='time']::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+    }
+}
